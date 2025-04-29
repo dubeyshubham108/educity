@@ -8,6 +8,8 @@ import About from './components/About/About.jsx'
 import Campus from './components/Campus/Campus.jsx'
 import Testimonial from './components/Testimonial/Testimonial.jsx'
 import Contact from './components/Contact/Contact.jsx'
+import Footer from './components/Footer/Footer.jsx'
+import VideoPlayer from './components/VideoPlayer/VideoPlayer.jsx'
 
 function App() {
 
@@ -25,7 +27,9 @@ function App() {
         <Testimonial/>
         <Title subTitle='Contact Us' title='Get in Touch' / >
         <Contact/>
+        <Footer/>
       </div>
+      <VideoPlayer/>
     </div>
   )
 }
