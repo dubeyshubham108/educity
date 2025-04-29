@@ -13,6 +13,8 @@ import VideoPlayer from './components/VideoPlayer/VideoPlayer.jsx'
 
 function App() {
 
+  const [ playState, setPlayState ] = useState(false)
+
   return (
     <div>
       <Navbar/>
@@ -20,7 +22,7 @@ function App() {
       <div className="container">
         <Title subTitle='OUR PROGRAM' title='What We Offer' / >
         <Programs/>
-        <About/>
+        <About setPlayState = {setPlayState}/>
         <Title subTitle='Gallery' title='Campus Photos' / >
         <Campus/>
         <Title subTitle='TESTIMONIAL' title='What Student Says' / >
@@ -29,7 +31,7 @@ function App() {
         <Contact/>
         <Footer/>
       </div>
-      <VideoPlayer/>
+      <VideoPlayer playState={playState} setPlayState={setPlayState}/>
     </div>
   )
 }
